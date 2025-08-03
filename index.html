@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cloud Types Flipcard Game</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Cloud Types Flipcard Game</h1>
+    <div id="scoreboard">
+      <div class="team" data-team="0">
+        <h2>Team 1: <span class="score">0</span></h2>
+        <div class="buttons">
+          <button class="score-btn" data-team="0" data-points="20">+20</button>
+          <button class="score-btn" data-team="0" data-points="-10">-10</button>
+          <button class="score-btn" data-team="0" data-points="0">0</button>
+        </div>
+      </div>
+      <div class="team" data-team="1">
+        <h2>Team 2: <span class="score">0</span></h2>
+        <div class="buttons">
+          <button class="score-btn" data-team="1" data-points="20">+20</button>
+          <button class="score-btn" data-team="1" data-points="-10">-10</button>
+          <button class="score-btn" data-team="1" data-points="0">0</button>
+        </div>
+      </div>
+      <div class="team" data-team="2">
+        <h2>Team 3: <span class="score">0</span></h2>
+        <div class="buttons">
+          <button class="score-btn" data-team="2" data-points="20">+20</button>
+          <button class="score-btn" data-team="2" data-points="-10">-10</button>
+          <button class="score-btn" data-team="2" data-points="0">0</button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div id="card-container">
+      <div id="card" class="card">
+        <div class="front"></div>
+        <div class="back"></div>
+      </div>
+    </div>
+    <div class="controls">
+      <button id="flip-btn">Flip</button>
+      <button id="next-btn">Next Card</button>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
